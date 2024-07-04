@@ -16,24 +16,5 @@ import com.cjc.main.service.GitCollabService;
 public class GitCollabController {
 	
 	@Autowired GitCollabService service;
-	
-	@PostMapping("/create")
-	public ResponseEntity<Student>savestudent(@RequestBody Student s)
-	{
-		Student st=service.savaData(s);
-		return new ResponseEntity<Student>(st, HttpStatus.OK);
-	}
-	
-	@GetMapping("/getStudent")
-	public ResponseEntity<Student> getStudent()
-	{
-		return null;
-	}
-	@PutMapping("/update")
-	
-		public ResponseEntity<Student> updateStudent()
-		{
-			return null;
-		}
 	}
 
